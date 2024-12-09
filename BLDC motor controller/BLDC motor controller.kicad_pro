@@ -1,0 +1,959 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": false,
+          "text_position": 0,
+          "units_format": 1
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.15,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.6,
+          "height": 2.0,
+          "width": 0.9
+        },
+        "silk_line_width": 0.15,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15,
+        "silk_text_upright": false,
+        "zones": {
+          "min_clearance": 0.3
+        }
+      },
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.2032,
+          "via_gap": 0.3,
+          "width": 0.172
+        }
+      ],
+      "drc_exclusions": [],
+      "meta": {
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_near_hole": "error",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "net_conflict": "warning",
+        "npth_inside_courtyard": "ignore",
+        "padstack": "warning",
+        "pth_inside_courtyard": "ignore",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "ignore",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "warning",
+        "starved_thermal": "error",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_dangling": "warning",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.2,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.25,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.254,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 1,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.25,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.55,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.5,
+        1.0,
+        5.0
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.55,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        }
+      ],
+      "zones_allow_external_fillets": false
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "ignore",
+      "label_dangling": "error",
+      "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "warning",
+      "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
+      "unannotated": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "BLDC motor controller.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.55,
+        "via_drill": 0.25,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(0, 0, 0)",
+        "track_width": 0.2,
+        "via_diameter": 0.55,
+        "via_drill": 0.25,
+        "wire_width": 24
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "MOTOR_SPI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(0, 0, 194)",
+        "track_width": 0.2,
+        "via_diameter": 0.55,
+        "via_drill": 0.25,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 3
+    },
+    "net_colors": {
+      "+12V": "rgb(255, 0, 0)",
+      "+3V3": "rgb(255, 0, 0)",
+      "+3V3A": "rgb(255, 0, 0)",
+      "+3V3A_FILT": "rgb(255, 0, 0)",
+      "+5V": "rgb(255, 0, 0)",
+      "+VBAT_FILT_12V_IN": "rgb(132, 0, 132)",
+      "+VBAT_FILT_3V3_IN": "rgb(132, 0, 132)",
+      "+VBAT_FILT_5V_IN": "rgb(132, 0, 132)",
+      "+VBAT_SAFE": "rgb(255, 0, 255)",
+      "/Project Architecture/Interface - FD-CAN/CAN_MCU_N": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/CAN_MCU_P": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/CAN_S": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/CAN_SHDN": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/FDCAN_N": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/FDCAN_P": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/FDCAN_TERM_MID": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/FDCAN_TN": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - FD-CAN/FDCAN_TP": "rgb(0, 72, 72)",
+      "/Project Architecture/Interface - Fan Control/FAN_CONTROL_GATE": "rgb(72, 0, 0)",
+      "/Project Architecture/Interface - Fan Control/FAN_CONTROL_GATE_R": "rgb(72, 0, 0)",
+      "/Project Architecture/Interface - Fan Control/FAN_CONTROL_IN": "rgb(72, 0, 0)",
+      "/Project Architecture/Interface - Fan Control/FAN_CONTROL_PWM": "rgb(72, 0, 0)",
+      "/Project Architecture/Interface - Interconnects/AUXP_1_CS": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUXP_1_MISO": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUXP_1_MOSI": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUXP_1_SCK": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUXP_2_SCL": "rgb(255, 196, 96)",
+      "/Project Architecture/Interface - Interconnects/AUXP_2_SDA": "rgb(255, 196, 96)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_A": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_B": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_CS": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_I": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_MISO": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_MOSI": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_SCK": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_U": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_V": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_1_W": "rgb(255, 212, 25)",
+      "/Project Architecture/Interface - Interconnects/AUX_2_PWM": "rgb(255, 196, 96)",
+      "/Project Architecture/Interface - Interconnects/AUX_2_SCL": "rgb(255, 196, 96)",
+      "/Project Architecture/Interface - Interconnects/AUX_2_SDA": "rgb(255, 196, 96)",
+      "/Project Architecture/Interface - Interconnects/MCU_SWCLK": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/MCU_SWDIO": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/MCU_SWO": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/MCU_nRESET": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/RS485_N": "rgb(194, 0, 194)",
+      "/Project Architecture/Interface - Interconnects/RS485_P": "rgb(194, 0, 194)",
+      "/Project Architecture/Interface - Interconnects/SWCLK": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/SWDIO": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/SWO": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - Interconnects/TEMP_MOT_H": "rgb(142, 255, 228)",
+      "/Project Architecture/Interface - Interconnects/TEMP_MOT_L": "rgb(142, 255, 228)",
+      "/Project Architecture/Interface - Interconnects/nRESET": "rgb(193, 255, 169)",
+      "/Project Architecture/Interface - RS8485/RS485_UART_DE": "rgb(194, 0, 194)",
+      "/Project Architecture/Interface - RS8485/RS485_UART_N": "rgb(194, 0, 194)",
+      "/Project Architecture/Interface - RS8485/RS485_UART_P": "rgb(194, 0, 194)",
+      "/Project Architecture/Interface - RS8485/RS485_UART_nRE": "rgb(194, 0, 194)",
+      "/Project Architecture/MCU - I_O/BATTERY_VSENSE": "rgb(127, 136, 255)",
+      "/Project Architecture/MCU - I_O/BOARD_VERSION": "rgb(255, 141, 133)",
+      "/Project Architecture/MCU - I_O/DRIVER_CS": "rgb(0, 0, 194)",
+      "/Project Architecture/MCU - I_O/DRIVER_ENABLE": "rgb(221, 133, 0)",
+      "/Project Architecture/MCU - I_O/DRIVER_HIZ": "rgb(0, 132, 0)",
+      "/Project Architecture/MCU - I_O/DRIVER_MISO": "rgb(0, 0, 194)",
+      "/Project Architecture/MCU - I_O/DRIVER_MOSI": "rgb(0, 0, 194)",
+      "/Project Architecture/MCU - I_O/DRIVER_NFALUT": "rgb(221, 133, 0)",
+      "/Project Architecture/MCU - I_O/DRIVER_SCK": "rgb(0, 0, 194)",
+      "/Project Architecture/MCU - I_O/FILTERED_SOA": "rgb(0, 194, 0)",
+      "/Project Architecture/MCU - I_O/FILTERED_SOB": "rgb(0, 194, 0)",
+      "/Project Architecture/MCU - I_O/FILTERED_SOC": "rgb(0, 194, 0)",
+      "/Project Architecture/MCU - I_O/LED_DBG_1": "rgb(72, 72, 0)",
+      "/Project Architecture/MCU - I_O/LED_DBG_2": "rgb(72, 72, 0)",
+      "/Project Architecture/MCU - I_O/PWM_PHASE_A": "rgb(0, 194, 194)",
+      "/Project Architecture/MCU - I_O/PWM_PHASE_B": "rgb(0, 194, 194)",
+      "/Project Architecture/MCU - I_O/PWM_PHASE_C": "rgb(0, 194, 194)",
+      "/Project Architecture/MCU - I_O/SENSE_TEMP_FET": "rgb(187, 255, 127)",
+      "/Project Architecture/MCU - I_O/SENSE_TEMP_MOT": "rgb(142, 255, 228)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GHA": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GHB": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GHC": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GLA": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GLB": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_GLC": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SHA": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SHB": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SHC": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SNA": "rgb(255, 255, 194)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SNB": "rgb(204, 102, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SNC": "rgb(0, 132, 132)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPA": "rgb(255, 255, 194)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPA+": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPA-": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPB": "rgb(204, 102, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPB+": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPB-": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPC": "rgb(0, 132, 132)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPC+": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/DRIVER_SPC-": "rgb(255, 229, 191)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/FET_GHA": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/FET_GLA": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/PHASE_A": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase A/PHASE_A_S": "rgb(132, 132, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase B/FET_GHB": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase B/FET_GLB": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase B/PHASE_B": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase B/PHASE_B_S": "rgb(194, 194, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase C/FET_GHC": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase C/FET_GLC": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase C/PHASE_C": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Inverter - Phase C/PHASE_C_S": "rgb(255, 255, 0)",
+      "/Project Architecture/Motor Control - Top Level/DRIVER_DVDD": "rgb(255, 19, 211)",
+      "/Project Architecture/Motor Control - Top Level/DRIVER_VGLS": "rgb(255, 19, 211)",
+      "/Project Architecture/Motor Control - Top Level/MOTOR_CPH": "rgb(255, 19, 211)",
+      "/Project Architecture/Motor Control - Top Level/MOTOR_CPL": "rgb(255, 19, 211)",
+      "/Project Architecture/Motor Control - Top Level/MOTOR_VCP": "rgb(255, 19, 211)",
+      "/Project Architecture/Motor Control - Top Level/SOA": "rgb(0, 194, 0)",
+      "/Project Architecture/Motor Control - Top Level/SOB": "rgb(0, 194, 0)",
+      "/Project Architecture/Motor Control - Top Level/SOC": "rgb(0, 194, 0)",
+      "/Project Architecture/User - LED Indicators/LED_1_GATE": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/LED_2_GATE": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/LED_DBG_1_A": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/LED_DBG_1_K": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/LED_DBG_2_A": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/LED_DBG_2_K": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/PWR_ON_12V": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/PWR_ON_3V3": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/PWR_ON_3V3A": "rgb(72, 72, 0)",
+      "/Project Architecture/User - LED Indicators/PWR_ON_5V": "rgb(72, 72, 0)",
+      "GND": "rgb(72, 72, 72)",
+      "Net-(C1101-Pad1)": "rgb(132, 132, 0)",
+      "Net-(C1102-Pad1)": "rgb(132, 132, 0)",
+      "Net-(C1201-Pad1)": "rgb(194, 194, 0)",
+      "Net-(C1202-Pad1)": "rgb(194, 194, 0)",
+      "Net-(C1301-Pad1)": "rgb(255, 255, 0)",
+      "Net-(C1302-Pad1)": "rgb(255, 255, 0)"
+    },
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "MOTOR_SPI",
+        "pattern": "/Project Architecture/Motor Control - Top Level/DRIVER_MISO"
+      },
+      {
+        "netclass": "MOTOR_SPI",
+        "pattern": "/Project Architecture/Motor Control - Top Level/DRIVER_MOSI"
+      },
+      {
+        "netclass": "MOTOR_SPI",
+        "pattern": "/Project Architecture/Motor Control - Top Level/DRIVER_SCK"
+      },
+      {
+        "netclass": "MOTOR_SPI",
+        "pattern": "/Project Architecture/Motor Control - Top Level/DRIVER_CS"
+      }
+    ]
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "amulet_controller.net",
+      "plot": "D:/Dokumentumok/VTS/Final Thesis/Hardware/BLDC Motor Controller/BLDC motor controller/Manufacturing/Gerber/",
+      "pos_files": "D:/Dokumentumok/VTS/Final Thesis/Hardware/BLDC Motor Controller/BLDC motor controller/Manufacturing/Components positions/",
+      "specctra_dsn": "",
+      "step": "STEP/amulet_controller.step",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": "Templates/KDT_Template_Fab.kicad_wks"
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "bom_export_filename": "D:\\Dokumentumok\\Mehatronics\\Robotics\\Autonomus-Mobile-Robot-AMR\\hardware\\BLDC motor controller\\BLDC motor controller\\Manufacturing\\BOOM\\BLDC motor controller.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "name": "",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "KiCad",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
+    "page_layout_descr_file": "Templates\\KDT_Template.kicad_wks",
+    "plot_directory": "D:/Dokumentumok/VTS/Final Thesis/Hardware/BLDC Motor Controller/BLDC motor controller/Documentation/Schematic/",
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "0650c7a8-acba-429c-9f8e-eec0baf0bc1c",
+      "Root"
+    ],
+    [
+      "de68a101-7eef-4ba8-abb4-14d03adb087f",
+      "Block Diagram"
+    ],
+    [
+      "fede4c36-00cc-4d3d-b71c-5243ba232202",
+      "Project Architecture"
+    ],
+    [
+      "7d5a1283-086b-46b0-8df7-a9850521fb5e",
+      "Powert Generation - Connector"
+    ],
+    [
+      "f33990bc-b375-4787-8e2c-e00257a78758",
+      "Power Generation - Bulk Capacitors"
+    ],
+    [
+      "e6015f1e-cbce-46f4-85e1-3d5463a17dc1",
+      "Power Generation - Buck Converter"
+    ],
+    [
+      "ea6a8310-a9cc-49c5-8e10-023c125a7861",
+      "Power Generation - LDO"
+    ],
+    [
+      "c3f86f89-1b7e-4b04-a68d-2d4bbf961c58",
+      "MCU - PWR"
+    ],
+    [
+      "c4d28adc-b754-4bc8-b84a-54e4591a6cee",
+      "MCU - I_O"
+    ],
+    [
+      "05ad8fcd-d89e-4223-a46b-22c7b2091700",
+      "Motor Control - Top Level"
+    ],
+    [
+      "44d1da73-8e2d-43a5-b83c-70cccd6c840b",
+      "Motor Control - Inverter - Phase A"
+    ],
+    [
+      "e2d828ac-fdad-498f-b266-c5349450d6c1",
+      "Motor Control - Inverter - Phase B"
+    ],
+    [
+      "0e90d6ba-e6a4-4405-a1fd-53bb62c590d8",
+      "Motor Control - Inverter - Phase C"
+    ],
+    [
+      "8b9cdce9-b274-4263-a63c-2927f25529ea",
+      "Sensing - Temperature"
+    ],
+    [
+      "6c055394-f00c-4446-aef7-d1150ea071d0",
+      "Sensing - Battery"
+    ],
+    [
+      "0688eda0-fcd2-4145-9213-a0abe979e8b0",
+      "Sensing - Position"
+    ],
+    [
+      "a9d1d096-dd19-4bf7-a80d-5ce216f3cbf7",
+      "Interface - RS8485"
+    ],
+    [
+      "da138589-64b0-4306-b531-99ffb22b7b6a",
+      "Interface - FD-CAN"
+    ],
+    [
+      "4764ef6d-43cd-48a5-852c-ac7a35d14251",
+      "Interface - Fan Control"
+    ],
+    [
+      "c69efae0-4bdd-4c91-9a12-ad9e429da620",
+      "Interface - Interconnects"
+    ],
+    [
+      "6fb2c058-3c0f-4c6d-9702-9f3671d97895",
+      "User - LED Indicators"
+    ],
+    [
+      "6732caa5-712e-44e0-aeec-0aeb2af23ef4",
+      "Misc - Board Version, DAC"
+    ],
+    [
+      "33486b79-cf14-4984-8cbf-945e6f957221",
+      "Misc - Holes, Fiducials"
+    ],
+    [
+      "13eb0b07-00a1-4d61-8da3-582545eb29a8",
+      "Power - Sequencing"
+    ],
+    [
+      "e7c91631-be85-488a-af7a-f2a810f3fbfe",
+      "Revision History"
+    ]
+  ],
+  "text_variables": {
+    "BOARD_NAME": "BLDC motor controller",
+    "COMPANY": "EmbedCore",
+    "DESIGNER": "Nagy Richárd",
+    "DOC_TYPE": "PCB",
+    "PROJECT_NAME": "BLDC motor controller",
+    "RELEASE_DATE": "Release Date",
+    "REVIEWER": "Nagy Richárd",
+    "REVISION": "1.0",
+    "VARIANT": "CHECKED"
+  }
+}

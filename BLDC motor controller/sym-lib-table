@@ -1,0 +1,13 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LMR36506-Q1")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/LMR36506-Q1.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS6217x")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/TPS6217x.kicad_sym")(options "")(descr ""))
+  (lib (name "LP2992")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/LP2992.kicad_sym")(options "")(descr ""))
+  (lib (name "STM32G474RETx")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/STM32G474RETx.kicad_sym")(options "")(descr ""))
+  (lib (name "DRV8353")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/DRV8353.kicad_sym")(options "")(descr ""))
+  (lib (name "ASS5047P")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/ASS5047P.kicad_sym")(options "")(descr ""))
+  (lib (name "ASS5084B")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/ASS5084B.kicad_sym")(options "")(descr ""))
+  (lib (name "sp3494")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/sp3494.kicad_sym")(options "")(descr ""))
+  (lib (name "DGD0216")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/DGD0216.kicad_sym")(options "")(descr ""))
+  (lib (name "ESDR0524SMUTAG")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/ESDR0524SMUTAG.kicad_sym")(options "")(descr ""))
+)
