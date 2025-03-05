@@ -1,0 +1,244 @@
+(footprint "0ACA9400TE"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "2410 ")
+	(tags "Fuse")
+	(property "Reference" "F**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "ddd6c022-4bd0-4ad1-a23e-4fd9c74ce132")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "0ACA9400TE"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24e71f5c-cafc-41c8-b6a9-0aa13ec96269")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17bd5a0e-307c-4408-805f-c0217e86dbeb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a908ca4-4660-4178-99b4-a2c8306f5ae1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9817b550-cca5-4ceb-9590-8016dcda679d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4 0)
+		(end -4 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "178ad419-d9c0-43c8-b0ec-e5d5671f4a6b")
+	)
+	(fp_line
+		(start -3.9 0)
+		(end -3.9 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9d6d759-32b7-491f-8ab5-59f031fec230")
+	)
+	(fp_line
+		(start -1.2 -1.3)
+		(end 1.2 -1.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "882c14af-68b9-4ce1-b844-017edd8968bf")
+	)
+	(fp_line
+		(start -1.2 1.3)
+		(end 1.2 1.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b1085446-807d-47a6-8c83-5ff923a9d16e")
+	)
+	(fp_arc
+		(start -4 0)
+		(mid -3.95 -0.05)
+		(end -3.9 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3c85f7cd-cb13-4cd2-80ff-a16672bff6a5")
+	)
+	(fp_arc
+		(start -3.9 0)
+		(mid -3.95 0.05)
+		(end -4 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1df4db5e-62b9-445d-8def-0689a9f98a12")
+	)
+	(fp_line
+		(start -4.5 -2.59)
+		(end 4.5 -2.59)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "875ed469-1a83-48ac-a7ad-d2f430595629")
+	)
+	(fp_line
+		(start -4.5 2.59)
+		(end -4.5 -2.59)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9edef838-f0f7-4dba-a88d-a8ff7c0ae8ec")
+	)
+	(fp_line
+		(start 4.5 -2.59)
+		(end 4.5 2.59)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "79a3bec7-3c2a-481f-8b12-ab3187bd6829")
+	)
+	(fp_line
+		(start 4.5 2.59)
+		(end -4.5 2.59)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "83af47dd-fb2a-4a6c-b2b2-f0d43360e530")
+	)
+	(fp_line
+		(start -3.1 -1.3)
+		(end 3.1 -1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c4751b11-b189-4861-82ed-b361bf822840")
+	)
+	(fp_line
+		(start -3.1 1.3)
+		(end -3.1 -1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "421bf577-5847-4ac6-bc53-2d66b62ef619")
+	)
+	(fp_line
+		(start 3.1 -1.3)
+		(end 3.1 1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "626b6bf8-4419-4fa1-a0c4-f2a7a7f0495c")
+	)
+	(fp_line
+		(start 3.1 1.3)
+		(end -3.1 1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e4bdc06c-2f9c-4fb0-a217-bde5caf63e0c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0d1a4061-5536-48a6-8b1a-98080dbada46")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.5 0)
+		(size 2 3.18)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "22232dcc-bc61-4343-9488-f91006317afb")
+	)
+	(pad "2" smd rect
+		(at 2.5 0)
+		(size 2 3.18)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5361a926-7b1b-4796-9462-5e54ebaa864c")
+	)
+	(model "${KIPRJMOD}/lib/3d_models/0ACA-9400-TE.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
